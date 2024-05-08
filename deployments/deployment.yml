@@ -13,7 +13,7 @@ spec:
         app: DevOps-Assessment
     spec:
       containers:
-      - name: DevOps-Assessment-container
-        image: your/image:latest
-        ports:
-        - containerPort: 80
+        - name: DevOps-Assessment-container
+          image: '$REPO_NAME/$IMAGE_NAME:'
+          ports:
+            - containerPort: 80
