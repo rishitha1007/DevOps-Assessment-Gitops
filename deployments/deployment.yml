@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: DevOps-Assessment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: DevOps-Assessment
+  template:
+    metadata:
+      labels:
+        app: DevOps-Assessment
+    spec:
+      containers:
+      - name: DevOps-Assessment-container
+        image: your/image:latest
+        ports:
+        - containerPort: 80
