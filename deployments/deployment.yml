@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: DevOps-Assessment-container
-          image: '$REPO_NAME/$IMAGE_NAME:'
+          image: 'rishithamarri/devops-assessment:'
           ports:
             - containerPort: 80
