@@ -1,19 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: DevOps-Assessment
+  name: devops-assessment
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: DevOps-Assessment
+      app: devops-assessment
   template:
     metadata:
       labels:
-        app: DevOps-Assessment
+        app: devops-assessment
     spec:
       containers:
+<<<<<<< HEAD
         - name: DevOps-Assessment-container
           image: 'rishithamarri/devops-assessment:'
+=======
+        - name: devops-assessment-container
+          image: '$REPO_NAME/$IMAGE_NAME:'
+>>>>>>> b0bd3ef (Changed name)
           ports:
             - containerPort: 80
