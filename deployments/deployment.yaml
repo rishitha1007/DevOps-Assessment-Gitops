@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: devops-assessment-container
-          image: 'rishithamarri/devops-assessment:'
+          image: 'rishithamarri/devops-assessment:main-d863dc1c753af4fd4d53ec5769ecb7aa586a5a2f'
           ports:
             - containerPort: 80
